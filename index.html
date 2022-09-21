@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>JS Simple Calculator</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="160carac" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <script>
+      let firstValue = parseInt(prompt("firstValue"));
+      let operator = prompt("operator");
+      let secondValue = parseInt(prompt("secondValue"));
+
+      switch (operator) {
+        case operator == "+":
+          console.log(firstValue + secondValue);
+          break;
+
+        case operator == "-":
+          console.log(firstValue - secondValue);
+          break;
+
+        case operator == "*":
+          console.log(firstValue * secondValue);
+          break;
+
+        case operator == "/":
+          console.log(firstValue / secondValue);
+          break;
+
+        default:
+          console.log("Wrong Operator");
+      }
+    </script>
+    <main></main>
+  </body>
+</html>
