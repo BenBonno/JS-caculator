@@ -13,32 +13,41 @@
   </head>
 
   <body>
-    <script>
-      let firstValue = parseInt(prompt("firstValue"));
-      let operator = prompt("operator");
-      let secondValue = parseInt(prompt("secondValue"));
-
-      switch (operator) {
-        case operator == "+":
-          console.log(firstValue + secondValue);
-          break;
-
-        case operator == "-":
-          console.log(firstValue - secondValue);
-          break;
-
-        case operator == "*":
-          console.log(firstValue * secondValue);
-          break;
-
-        case operator == "/":
-          console.log(firstValue / secondValue);
-          break;
-
-        default:
-          console.log("Wrong Operator");
-      }
-    </script>
+   
     <main></main>
+    <script src="script.js"></script>  <!-- Bonne pratique est de le mettre à la fin du body-->
   </body>
 </html>
+
+<!-- Soluce yannick
+do {
+    firstValue = parseInt(prompt("Enter firstValue :", "0"), 10);
+    if (isNaN(firstValue)){
+        alert("Il faut un chiffre bordel");
+    } 
+}
+while (isNaN(firstValue));
+console.log(firstValue); 
+
+//// Operator
+const operators =  ['+', '-', '*', '/'];
+do {
+    operator = prompt("Enter operator", "");
+    if (!operators.includes(operator)){
+        alert("Il faut un operateur");
+    }
+}
+while (!operators.includes(operator));
+console.log(operator);
+
+//// Second Value
+do {
+    secondValue = parseInt(prompt("Enter secondValue :", "0"), 10);
+    if (isNaN(secondValue)){
+        alert("Il faut un chiffre bordel");
+    } 
+}
+while (isNaN(secondValue));
+console.log(secondValue);
+
+console.log(  )
